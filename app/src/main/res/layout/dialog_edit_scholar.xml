@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F5F0E8"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT SCHOLAR"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#3B2F2F"
+        android:letterSpacing="0.15"
+        android:paddingBottom="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAMILY NAME"
+        android:textSize="11sp"
+        android:textColor="#9E8B7D"
+        android:letterSpacing="0.15"
+        android:paddingBottom="6dp" />
+
+    <EditText
+        android:id="@+id/dialogFamilyName"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#FFFDF8"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#3B2F2F"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GIVEN NAME"
+        android:textSize="11sp"
+        android:textColor="#9E8B7D"
+        android:letterSpacing="0.15"
+        android:paddingBottom="6dp" />
+
+    <EditText
+        android:id="@+id/dialogGivenName"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#FFFDF8"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#3B2F2F"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOME CITY"
+        android:textSize="11sp"
+        android:textColor="#9E8B7D"
+        android:letterSpacing="0.15"
+        android:paddingBottom="6dp" />
+
+    <Spinner
+        android:id="@+id/dialogCitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#FFFDF8"
+        android:entries="@array/moroccan_cities"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GENDER"
+        android:textSize="11sp"
+        android:textColor="#9E8B7D"
+        android:letterSpacing="0.15"
+        android:paddingBottom="6dp" />
+
+    <RadioGroup
+        android:id="@+id/dialogGenderGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <RadioButton
+            android:id="@+id/dialogRadioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#3B2F2F"
+            android:layout_marginRight="24dp" />
+
+        <RadioButton
+            android:id="@+id/dialogRadioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#3B2F2F" />
+
+    </RadioGroup>
+
+</LinearLayout>

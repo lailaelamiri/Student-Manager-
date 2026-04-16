@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IVORY LEDGER II"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#3B2F2F"
+            android:letterSpacing="0.2"
+            android:gravity="center"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enroll a New Scholar"
+            android:textSize="13sp"
+            android:textColor="#9E8B7D"
+            android:gravity="center"
+            android:paddingBottom="32dp" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:background="#C4A882"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            style="@style/parchmentLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family Name" />
+
+        <EditText
+            android:id="@+id/inputFamilyName"
+            style="@style/ivoryInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Enter family name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            style="@style/parchmentLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Given Name" />
+
+        <EditText
+            android:id="@+id/inputGivenName"
+            style="@style/ivoryInput"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Enter given name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            style="@style/parchmentLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home City" />
+
+        <Spinner
+            android:id="@+id/spinnerHomeCity"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#FFFDF8"
+            android:entries="@array/moroccan_cities"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            style="@style/parchmentLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#3B2F2F"
+                android:layout_marginRight="24dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#3B2F2F" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmitEnrollment"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#C4A882"
+            android:text="ENROLL SCHOLAR"
+            android:textColor="#FFFDF8"
+            android:textStyle="bold"
+            android:letterSpacing="0.1" />
+        <Button
+            android:id="@+id/btnViewRoster"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#E8DDD0"
+            android:text="VIEW SCHOLAR ROSTER"
+            android:textColor="#3B2F2F"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</ScrollView>
